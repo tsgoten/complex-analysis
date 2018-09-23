@@ -1,0 +1,156 @@
+\chapter{Integrals}
+The theorems are generally concise and powerful, and many of the proofs are short. 
+\section{Derivatives of Functions $ w(t) $}
+First consider derivatives of complex-valued functions $ w $ of a real variable $ t $.
+\[ w(t) = u(t) + iv(t) \], 
+where the functions $ u $ and $ v $ are real valued functions of $ t $. The derivative $ w'(t) $, 
+of the function at a point $ t $ is defined as 
+\[ w'(t) = u'(t) = iv'(t) \] 
+provided the respective derivatives exist. \\Also 
+\[ \dfrac{d}{dt}[z_0 w(t)] = z_0 w'(t). \] Another expected rule is 
+\[ \dfrac{d}{dt} e^{z_0t} = z_0 e^{z_0 t}\]
+One can prove this as a simple exercise. 
+\section{Definite Integrals of Functions $ w(t) $}
+For a complex valued functions of a real variable $ t $ 
+\[ w(t) = u(t) + iv(t) \] the definite integral of $ w(t) $ over an interval \[ a\leq t \leq b \] is defined as 
+\[ \int_{a}^{b}w(t)dt = \int_{a}^{b}u(t)dt + i\int_{a}^{b}v(t)dt \] provided the integrals exist, the real and imaginary parts of the integral are given by just taking the integral of the real and imaginary components of the function. 
+\begin{example}
+	For and illustration 
+	\begin{gather}
+		\int_{0}^{1}(1+it)^2 dt = \int_{0}^{1}(1-t^2)dt + i \int_{1}^{0}2t dt \\
+		\int_{0}^{1}(1+it)^2 dt = \dfrac{2}{3} + i
+	\end{gather}
+\end{example}
+\section{Contours}
+Integrals of a complex functions of a complex variable are defined on curves in the complex plane, rather than on just intervals of the real line. Classes of curves that are adequate for the study of such integrals are introduced in this sections. \\ \indent 
+A set  of points $ z = (x,y) $ in the complex plane is said to be an arc if 
+\[ x = x(t), \indent y = y(t) \indent (a \leq t \leq b), \] where $ x(t) $ and $ y(t) $ are continuous functions of the parameter $ t$. The definition establishes a continuous mapping in the interval. It is convenient to describe the points of $ C $ by means of the equation
+$ z = z(t) $ where \[ z(t) = x(t) + iy(t). \] The arc $ C $ is a simple arc, or a Jordan arc, if it does not cross itself; that is, $ C $ is simple if $ z(t_1) \neq z(t_2) $ when $ t_1 \neq t_2 $. When the arc $ C $ is simple except for the fact that $ z(b) = z(a) $, we say that $ C $ is a simple closed curve, or Jordan curve. Such a curve is positively oriented when it is in the counterclockwise direction. \\ \indent 
+The geometric nature of a particular arc often suggests different notation for the parameter $ t $. This is, in fact, the case in the following examples. 
+\begin{example}
+	The polygonal line defined by means of the equations 
+	\begin{gather}
+		z = 
+		\begin{cases}
+			x + ix \indent when \indent 0 \leq x \leq 1, \\
+			x + i \indent when \indent 1 \leq x \leq 2
+		\end{cases}
+	\end{gather}
+	and consisting of a line segment from $ 0 $ to $ 1 + i $ followed by one from $ 1 + i $ to $ 2 + i $ is a simple arc 
+	\putpic{51}
+\end{example}
+\begin{example}
+	The unit circle \[ z = e^{i \theta} \indent (0 \leq \theta \leq 2 \pi) \]
+	about the origin is a simple closed curve, oriented in the counterclockwise direction centered at the point $ z_0 $ and with radius $ R $. 
+\end{example}
+%Add more to this section about the torsion and the unit vector for the direction
+\section{Contour Integrals}
+We turn now to integrals of complex valued functions $ f $ of the complex variable $ z $. This integral is defined along a contour $ C $, extending from $ z_1 $ to $ z_2 $, in the complex plane. It is therefore a line integral, written 
+\[ \int_{C}f(z)dz \indent or \indent \int_{z_1}^{z_2} f(z) dz,\]
+the latter notation is used when the value of the integral is independent of the choice of contour taken between two fixed end points. \\ \indent 
+For the equation \[ z = z(t) \indent (a \leq t \leq b) \] representing a contour $ C $, extending from points $ z_1 $ to $ z_2 $ the integral 
+\[ \int_{C}f(z)dz \indent = \int_{a}^{b} f[z(t)]z'(t)dt \] we also find the property that 
+\[ \int_{-C}f(z)dz \indent = -\int_{C}f(z)dz \indent \]
+\section{Some Examples}
+\begin{example}
+	Let us find the value of the integral 
+	\begin{align}
+		I = \int_{C} \overline{z} dz \\ 
+		\intertext{when $ C $ is the right-hand half}
+		z = 2e^{i \theta} \indent \left(-\dfrac{\pi}{2} \leq \theta \leq \dfrac{\pi}{2}\right) \\
+		\intertext{of the circle with radius 2} 
+		I = \int_{-\pi /2}^{\pi /2} \overline{2e^{i\theta}}(2e^{i \theta})' d \theta = 4 \int_{-\pi /2}^{\pi /2} \overline{e^{i\theta}}(e^{i \theta})' d \theta
+		\intertext{since}
+		\overline{e^{i\theta}} = e^{-i \theta} 
+		\intertext{ we find that the value of the integral is $ 4 \pi i $}
+ 	\end{align}
+\end{example}
+\section{Upper Bounds for Moduli of Contour Integrals}
+\begin{theorem}
+	Let $ C $ denote a contour of length $ L $, and suppose that a funciton $ f(z) $
+ is piecewise continuous on $ C $. if $ M $ is a nonnegative constant such that \[ |f(z)| \leq M \] for all points $ z $ on $ C $ at which $ f(z) $ is defined, then \[ \left| \int_{C}f(z)dz  \right| \leq ML\]
+\end{theorem}
+\begin{example}
+	Let $ C $ be the arc of the circle $ |z| = 2 $ from 2 to 2i, in the first quadrant. We can show that 
+	\[ \left| \int_{C} \dfrac{z + 4}{z^3 - 1} dz \right| \leq \dfrac{6 \pi}{7} \]
+\end{example}
+\section{Antiderivatives}
+Although the value of a contour integral of a function $ f(z) $ from a fixed point $ z_1 $ to a fixed point $ z_2 $ depends, in general, on the path taken, there are certain functions whose integrals from these points have values independent of path. This also leads to the fact that such integrals exist of closed paths of value zero. This leads to the following theorem
+\begin{theorem}
+	Suppose that a function $ f(z) $ is continuous on a domain $ D $. If any one of the following statements is true, then so are the others: 
+	\begin{enumerate}
+		\item$ f(z) $ has an antiderivative $ F(z) $ throughout $ D $; 
+		\item the integrals of $ f(z) $ along contours lying entirely in $ D $ and extending from any fixed point $ z_1 $ to any fixed point $ z_2 $ all have the same value, namely 
+		\[ \int_{z_1}^{z_2} f(z) dz = F(z)]_{z_1}^{z_2} = F(z_2) - F(z_1) \] where $ F(z) $ is the antiderivative in statement (a); 
+		\item the integrals of $ f(z) $ around closed contours lying entirely in $ D $ all have value zero. 
+	\end{enumerate}
+\end{theorem}
+It should be emphasized that the theorem does not claim that any of these
+statements is true for a given function $ f(z) $. It says only that all of them are true or
+that none of them is true. 
+\begin{example}
+	The continuous function $ f(z) = z^2$ has an antiderivative $ F(z) = z^3 / 3  $ throughout the plane. Hence 
+	\[ \int_{0}^{1+i} z^2 dz =  \left[ \dfrac{z^3}{3} \right]_{0}^{1+i} \]
+	\[ = \dfrac{1}{3} (1+i) ^3 = \dfrac{2}{3}(-1+i)\] for every contour from $ z = 0 $ to $ z = 1 + i $
+\end{example}
+\section{Cauchy-Goursat Theorem}
+Suppose that simple function $ f $ is analytic in a simply connected domain $ D $. Then for every simple closed contour $ C $ in $ D $, \[ \oint f(z) dz = 0 \] 
+The domain is just an open set where two points can be joined by a polygonal path inside. A simply connected domain exists when all the points in the contour are in the domain and when the domain has no holes.  \\ Another way to state the theorem is: if $ f $ is analytic everywhere within and on $ C $, which is simple and closed, then the same theorem holds. \\ consider the following example 
+\begin{example}
+	$ C $ is a circle $ |z| = 1 $ \[ \oint_C \dfrac{e^z}{3z + 4} dz = \] 
+	Since the point when this is not defined, $ z = -4/3 $ but that point is outside the contour we know it will be $ 0 $ within the contour. 
+\end{example}
+Now lets consider an example where the theorem may seem to fail (spoiler: it does not). 
+\begin{example}
+	Compute the exact value of $ \oint _C \dfrac{1}{z} dz$, where $ C $ is the circle with radius 1 centered at 0. We can do this by first parameterizing the equation 
+	\[ \oint_C \dfrac{1}{z} dz = \int_{0}^{2 \pi} \dfrac{1}{e^{i \theta}} ie^{i \theta} d\theta = 2\pi i \] 
+	We can see that $  2 \pi i \neq 0 $. This happens because, the condition that the function is analytic on and within the contour $ C $ does not hold. The function is not analytic on the origin, which is within the circle of radius 1.
+\end{example}
+\section{Simply Connected Domains}
+A simply connected domain $ D $ is a domain such that every simple closed contour
+within it encloses only points of $ D $. The set of points interior to a simple closed
+contour is an example. The annular domain between two concentric circles is, however, not simply connected.
+\begin{theorem}
+	If a function is analytic throughout a simply connected domain $ D $, then \[ \oint_C f(z) dz = 0 \] for every closed contour $ C $ lying in $ D $. 
+\end{theorem}
+\begin{example}
+	If $ C $ denotes any closed contour lying in the open disk $ |z| < 2 $, then \[ \oint _C \dfrac{z e^z}{(z^2 + 9)^5} dz = 0.\] Because of the theorem above. The theorem holds because the function is not analytic for the values $ z = \pm 3i $ which lies outside the open disk. 
+\end{example}
+\begin{example}
+	Compute \[ \oint_C ze^z dz \] where $ C $ is the square with vertices $ z = 0,1, 1+ i, i $. \\ \indent Consider calculating this without the Cauchy-Goursat Theorem to confirm the results from the theorem. 
+\end{example}
+\section{Multiply Connected Domains}
+A domain that is not simply connected is said to be multiply connected. The following theorem is an adaptation of the Cauchy-Goursat theorem to multiply connected domains. 
+\begin{theorem}
+	Suppose that 
+	\begin{enumerate}
+		\item $ C $ is a simple closed contour, described in the counterclockwise direction;
+		\item $ C_k (k = 1,2,...,n)$  are simple closed contours interior to $ C $, all described in the clockwise direction, that are disjoint and whose interiors have no points in
+		common
+	\end{enumerate}
+	If a function $ f $ is analytic on all of these contours and throughout the multiply
+	connected domain consisting of the points inside $ C $ and exterior to each $ C_k $ , then
+	\[ \oint_C f(z)dz + \sum\limits^{n}_{k =1} \int_{C_k} f(z)dz = 0. \] Note that in equation, the direction of each path of integration is such that
+	the multiply connected domain lies to the left of that path. \\ \indent An obvious cororllary from this is that if a contour $ C_1 $ lies entirely within another $ C_2 $. Then, 
+	\[ \int_{C_2} f(z) dz = \int_{C_1} f(z) dz. \]
+\end{theorem}
+\section{Cauchy Integral Formula}
+Another fundamental boiii shall be established in this review. 
+\begin{theorem}
+	Let $ f $ be analytic everywhere inside and on a simple closed contour $ C $, taken in the positive sense. If $ z_0 $ is any point interior to $ C $, then 
+	\[ f(z_0) = \dfrac{1}{2 \pi i} \int_{C} \dfrac{f(z)}{z-z_0} dz \]
+\end{theorem}
+The following equation above is called the \textit{Cauchy integral formula}. It tells us that if a function $ f $ is to be analytic within and on a simple closed contour $ C $, then the values of $ f $ interior to $ C $ are completely determined by the values of $ f $ on $ C $. \\ \indent The formula is often written as \[ \int_{C} \dfrac{f(z)}{z-z_0} dz = 2 \pi i f(z_0),\] it can be used to evaluate certain integrals along simple closed contours.  
+\begin{example}
+	Let $ C $ be the positively oriented circle $ |z| = 2 $. Since the function 
+	\[ f(z) = \dfrac{z}{9 - z^2} \] is analytic within and on $ C $ and since the point $ z_0 = -i $ is interior to $ C $, we can find that 
+	\[ \int_{C} \dfrac{z dz}{(9-z^2)(z + i)} = \int_{C} \dfrac{z/ (9-z^2)}{z - (-i)} dz = \]
+	\[ = 2 \pi i \left( \dfrac{-i}{10} \right) = \dfrac{\pi}{5} \]
+\end{example}
+\section{Liouville's Theorem and The Fundamental Theorem of Algebra}
+\begin{theorem}
+	If a function $ f $ is entire and bounded in the complex plane, then $ f(z) $ is constant throughout the plane. 
+\end{theorem}
+\begin{theorem}
+	Any polynomial \[ P(z) = a_0 + a_1z + a_2z^2 + ... + a_n z^n \] where $ a_n \neq 0 $ of degree $ n(n \geq 1) $ has at least one zero.
+\end{theorem}

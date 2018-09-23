@@ -1,0 +1,37 @@
+\chapter{Elementary Functions}
+We define analytic functions of a complex variable $ z $ that reduce to the elementary functions in calculus when $ z = x + i0 $. 
+
+\section{The Exponential Function}
+We define the exponential function $ e^z $
+\[ e^z = e^x + e^{iy} \]
+since $ z = x = iy $. \\
+The addition and multiplication formulas for real-valued exponential functions also hold for complex-valued. In fact 
+\[ \frac{d}{dz} e^z = e^z \] everywhere in the $ z $ plane. This also shows that 
+\[ e^z \neq 0 \indent \text{for any complex number $ z $}\]
+This can be shown, writing 
+\[ e^z = \rho e^{i\phi} \] where $ p = e^x $ and $ \phi = y $
+which tells us that 
+\[ |e^z| = e^x \] and \[ arg(e^z) = y + 2n \pi \] 
+Some properties of $ e^z $ are interesting. For example, since 
+\[ e^{z+2\pi i} = e^z e^{2\pi i} \text{\indent and \indent }e^{2 \pi i}= 1,\]
+we find that $ e^z $ is periodic, with a pure imaginary period $ 2 \pi i $: 
+\[ e^{z+2 \pi i} = e^z. \]
+$ e^z $ can also be negative, recall Euler's identity. 
+\begin{example}
+	In order to find the numbers $ z = x +iy $ such that \[ e^z = 1 + i \] we write the equation as 
+	\[ e^xe^{iy} = \sqrt{2}e^{i \pi / 4} \] Then, we can express it in the form 
+	\[ e^x = \sqrt{2} \text{ \indent and \indent} y = \dfrac{\pi}{4}+2n\pi\] 
+	thus 
+	\[ x = \ln \sqrt{2} = \dfrac{1}{2} \ln 2 \] and so 
+	\[ z = \dfrac{1}{2} \ln 2 + \left(2n + \dfrac{1}{4}\right)\pi i \]
+\end{example}
+\section{The Logarithmic Function}
+The definition of the logarithmic function is based on solving the equation 
+\[ e^w = z \] for when $ w $ is a nonzero complex number and $ w = u + iv $ and $ z = re^{i \theta} $. \[ e^ue^{iv} = re^{i \theta} \] based on the equality for two complex numbers 
+\[ e^u = r \text{  and  } v=\theta + 2n\pi \]. The equation is satisfied iff \[ w = \ln r + i(\theta + 2n \pi) \] Thus, if we write 
+\[ \log z = \ln r + i(\theta + 2n\pi) \] equation tells us that 
+\[ e^{\log z} = z \] which serves as the definition for the logarithmic function. \\ \indent The expression van be written as \[ \log z = \ln |z| + i \arg z \] The principal value of $ \log z $ is when $ n =0 $.
+\section{Branches and Derivatives of Logarithms}
+The logarithm function can be written as \[ \log z = \ln r + i \theta \] the complex function has components 
+\[ u(r,\theta) = \ln r \text{\indent and \indent} v(r,\theta) = \theta  \] 
+We can find that these components satisfy the Cauchy-Riemann conditions for polar functions. Furthermore we can find that \[ \dfrac{d}{dz} \log z = e^{-i \theta}(u_r + iv_r) = \dfrac{1}{re^{i \theta}} = \dfrac{1}{z} \]

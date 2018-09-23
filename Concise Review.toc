@@ -1,0 +1,49 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1.1}Introduction}{3}
+\contentsline {section}{\numberline {1.2}Euler's Formula}{4}
+\contentsline {section}{\numberline {1.3}Exercises}{5}
+\contentsline {chapter}{\numberline {2}Complex Numbers}{6}
+\contentsline {section}{\numberline {2.1}Sums and Products}{6}
+\contentsline {section}{\numberline {2.2}Basic Algebraic Properties}{6}
+\contentsline {section}{\numberline {2.3}Vectors and Moduli}{6}
+\contentsline {section}{\numberline {2.4}Complex Conjugates}{7}
+\contentsline {section}{\numberline {2.5}Exercises}{7}
+\contentsline {chapter}{\numberline {3}Analytic Functions}{8}
+\contentsline {section}{\numberline {3.1}Functions of a Complex Variable}{8}
+\contentsline {section}{\numberline {3.2}Limits}{9}
+\contentsline {section}{\numberline {3.3}Continuity}{9}
+\contentsline {section}{\numberline {3.4}Derivatives}{10}
+\contentsline {section}{\numberline {3.5}Cauchy-Riemann Equations}{11}
+\contentsline {section}{\numberline {3.6}Polar Coordinates}{13}
+\contentsline {section}{\numberline {3.7}Analytic Functions}{14}
+\contentsline {section}{\numberline {3.8}Harmonic Functions}{14}
+\contentsline {section}{\numberline {3.9}Reflection Principle}{14}
+\contentsline {chapter}{\numberline {4}Elementary Functions}{16}
+\contentsline {section}{\numberline {4.1}The Exponential Function}{16}
+\contentsline {section}{\numberline {4.2}The Logarithmic Function}{17}
+\contentsline {section}{\numberline {4.3}Branches and Derivatives of Logarithms}{17}
+\contentsline {chapter}{\numberline {5}Integrals}{18}
+\contentsline {section}{\numberline {5.1}Derivatives of Functions $ w(t) $}{18}
+\contentsline {section}{\numberline {5.2}Definite Integrals of Functions $ w(t) $}{18}
+\contentsline {section}{\numberline {5.3}Contours}{19}
+\contentsline {section}{\numberline {5.4}Contour Integrals}{19}
+\contentsline {section}{\numberline {5.5}Some Examples}{20}
+\contentsline {section}{\numberline {5.6}Upper Bounds for Moduli of Contour Integrals}{20}
+\contentsline {section}{\numberline {5.7}Antiderivatives}{20}
+\contentsline {section}{\numberline {5.8}Cauchy-Goursat Theorem}{21}
+\contentsline {section}{\numberline {5.9}Simply Connected Domains}{22}
+\contentsline {section}{\numberline {5.10}Multiply Connected Domains}{22}
+\contentsline {section}{\numberline {5.11}Cauchy Integral Formula}{23}
+\contentsline {section}{\numberline {5.12}Liouville's Theorem and The Fundamental Theorem of Algebra}{23}
+\contentsline {chapter}{\numberline {6}Residues and Poles}{24}
+\contentsline {section}{\numberline {6.1}Isolated Singular Points}{24}
+\contentsline {section}{\numberline {6.2}Residues}{24}
+\contentsline {section}{\numberline {6.3}Cauchy's Residue Theorem}{25}
+\contentsline {section}{\numberline {6.4}Residue at Infinity}{25}
+\contentsline {section}{\numberline {6.5}The Three Types of Isolated Singular Points}{26}
+\contentsline {section}{\numberline {6.6}Residue at Poles}{27}
+\contentsline {section}{\numberline {6.7}Zeros of Analytic Functions}{27}
+\contentsline {section}{\numberline {6.8}Zeros and Poles}{28}
+\contentsline {chapter}{\numberline {7}Application of Residues}{30}
+\contentsline {section}{\numberline {7.1}Evaluation of Improper Integrals}{30}
+\contentsline {section}{\numberline {7.2}Improper Integrals From Fourier Analysis}{30}

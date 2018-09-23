@@ -1,0 +1,66 @@
+\documentclass[12pt, letterpaper, twocolumn]{report}
+%Packages
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+%Information
+\author{Tarang Srivastava}
+\title{A Concise Review of Complex Analysis }
+%Theorems
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{}
+%\theoremstyle{theorem}
+\newtheorem{theorem}{Theorem}[section]
+%Commands
+\newcommand{\putpic}[1]{
+	\begin{center}
+		\includegraphics[width=6cm]{#1}
+	\end{center}
+}
+\newcommand{\putpiclinewidth}[1]{
+	\begin{center}
+		\includegraphics[width=\linewidth]{#1}
+	\end{center}
+}
+\newcommand{\polarx}{r\cos \theta}
+\newcommand{\polary}{r\sin \theta}
+\newcommand{\polarz}{r e^{i \theta}}
+\newcommand*{\polarzValue}[1]{r e^{i #1 \theta}}
+%Package Commands
+\graphicspath{{Graphics/}}
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			\Huge
+			\textbf{Complex Analysis}\\
+			\vspace{0.5cm}
+			\LARGE
+			A Concise Review of Complex Analysis\\
+			\vspace{1.5cm}
+			\textbf{Tarang Srivastava}\\
+			\vfill
+			\vspace{0.8cm}
+			\Large
+			Dr. Mesut \c{C}akir\\
+			Differential Equations and Complex Analysis\\
+			South Brunswick High School\\
+			20 June 2018
+		\end{center}
+	\end{titlepage}
+
+	\tableofcontents
+	%Chapters
+	\input{Chapters/chapter01}
+	\input{Chapters/chapter02}
+	\input{Chapters/chapter03}
+	\input{Chapters/chapter04}
+	\input{Chapters/chapter05}
+	\input{Chapters/chapter06}
+	\input{Chapters/chapter07}
+	
+\end{document}

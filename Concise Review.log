@@ -1,0 +1,480 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.2)  14 JUN 2018 09:27
+entering extended mode
+**"./Concise Review.tex"
+("Concise Review.tex"
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen103
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks17
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks18
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks26
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+\c@example=\count100
+\c@exercise=\count101
+\c@theorem=\count102
+
+("Concise Review.aux")
+\openout1 = `"Concise Review.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+
+(C:\Users\tsgot\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen115
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks29
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+) [1
+
+
+{C:/Users/tsgot/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("Concise R
+eview.toc"
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+
+])
+\tf@toc=\write3
+\openout3 = `"Concise Review.toc"'.
+
+ [2]
+(Chapters/chapter01.tex
+Chapter 1.
+
+Underfull \hbox (badness 2600) in paragraph at lines 3--7
+\OT1/cmr/m/n/12 is ac-tu-ally quite in-ter-est-ing, con-sid-er-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+<Graphics/addvector.jpg, id=15, 237.88875pt x 168.02776pt>
+File: Graphics/addvector.jpg Graphic file (type jpg)
+<use Graphics/addvector.jpg>
+Package pdftex.def Info: Graphics/addvector.jpg  used on input line 7.
+(pdftex.def)             Requested size: 170.71652pt x 120.58762pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<Graphics/multiply.jpg, id=16, 236.082pt x 173.448pt>
+File: Graphics/multiply.jpg Graphic file (type jpg)
+<use Graphics/multiply.jpg>
+Package pdftex.def Info: Graphics/multiply.jpg  used on input line 9.
+(pdftex.def)             Requested size: 170.71652pt x 125.425pt.
+ [3
+
+
+ <./Graphics/addvector.jpg> <./Graphics/multiply.jpg>]
+<Graphics/terms.jpg, id=22, 686.565pt x 568.524pt>
+File: Graphics/terms.jpg Graphic file (type jpg)
+<use Graphics/terms.jpg>
+Package pdftex.def Info: Graphics/terms.jpg  used on input line 19.
+(pdftex.def)             Requested size: 229.5pt x 190.03381pt.
+ [4 <./Graphics/terms.jpg>]
+<Graphics/sinecosineaddition.jpg, id=30, 415.5525pt x 168.63pt>
+File: Graphics/sinecosineaddition.jpg Graphic file (type jpg)
+<use Graphics/sinecosineaddition.jpg>
+Package pdftex.def Info: Graphics/sinecosineaddition.jpg  used on input line 27
+.
+(pdftex.def)             Requested size: 229.5pt x 93.13016pt.
+
+[5
+
+ <./Graphics/sinecosineaddition.jpg>]) (Chapters/chapter02.tex
+Chapter 2.
+<Graphics/23.jpg, id=34, 230.66174pt x 94.55325pt>
+File: Graphics/23.jpg Graphic file (type jpg)
+<use Graphics/23.jpg>
+Package pdftex.def Info: Graphics/23.jpg  used on input line 28.
+(pdftex.def)             Requested size: 229.5pt x 94.07834pt.
+
+Underfull \hbox (badness 6510) in paragraph at lines 29--31
+\OT1/cmr/m/n/12 The mod-u-lus can be com-puted us-ing
+ []
+
+[6
+
+
+ <./Graphics/23.jpg>]) (Chapters/chapter03.tex [7
+
+]
+Chapter 3.
+[8
+
+] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]\OT1/cmr/bx/n/17.28 Cauchy-Riemann
+ []
+
+[11]
+Underfull \hbox (badness 4454) in paragraph at lines 142--143
+\OT1/cmr/bx/n/12 Example 3.5.1. \OT1/cmr/m/n/12 In Ex-am-ple 3.4.1 we
+ []
+
+[12]
+Underfull \hbox (badness 1102) in paragraph at lines 174--175
+\OT1/cmr/m/n/12 of the Cauchy-Riemann equa-tions at
+ []
+
+[13] [14]) (Chapters/chapter04.tex [15
+
+]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/17.28 The Ex-po-nen-tial
+ []
+
+[16
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]\OT1/cmr/bx/n/17.28 The Log-a-rith-mic
+ []
+
+) (Chapters/chapter05.tex [17]
+Chapter 5.
+
+Underfull \hbox (badness 1077) in paragraph at lines 3--3
+[]\OT1/cmr/bx/n/17.28 Derivatives of Func-
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 13--13
+[]\OT1/cmr/bx/n/17.28 Definite In-te-grals of
+ []
+
+[18
+
+]
+<Graphics/51.jpg, id=80, 185.493pt x 113.82526pt>
+File: Graphics/51.jpg Graphic file (type jpg)
+<use Graphics/51.jpg>
+Package pdftex.def Info: Graphics/51.jpg  used on input line 40.
+(pdftex.def)             Requested size: 170.71652pt x 104.76218pt.
+ [19 <./Graphics/51.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]\OT1/cmr/bx/n/17.28 Upper Bounds for
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 68--68
+\OT1/cmr/bx/n/17.28 Mod-uli of Con-tour
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[]\OT1/cmr/bx/n/17.28 Simply Con-nected
+ []
+
+[21]
+Underfull \hbox (badness 3803) in paragraph at lines 120--121
+[]\OT1/cmr/m/n/12 Consider cal-cu-lat-ing this with-out the
+ []
+
+[22]
+Underfull \hbox (badness 1052) in paragraph at lines 150--150
+[]\OT1/cmr/bx/n/17.28 Liouville's The-o-rem
+ []
+
+) (Chapters/chapter06.tex [23]
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]\OT1/cmr/bx/n/17.28 Isolated Sin-gu-lar
+ []
+
+[24
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]\OT1/cmr/bx/n/17.28 Cauchy's Residue
+ []
+
+<Graphics/631.jpg, id=101, 202.356pt x 119.84775pt>
+File: Graphics/631.jpg Graphic file (type jpg)
+<use Graphics/631.jpg>
+Package pdftex.def Info: Graphics/631.jpg  used on input line 34.
+(pdftex.def)             Requested size: 229.5pt x 135.93109pt.
+
+Underfull \hbox (badness 3525) in paragraph at lines 37--38
+\OT1/cmr/m/n/12 Suppose that a func-tion $\OML/cmm/m/it/12 f$ \OT1/cmr/m/n/12 i
+s an-a-lytic
+ []
+
+[25 <./Graphics/631.jpg>]
+<Graphics/632.jpg, id=105, 544.434pt x 476.982pt>
+File: Graphics/632.jpg Graphic file (type jpg)
+<use Graphics/632.jpg>
+Package pdftex.def Info: Graphics/632.jpg  used on input line 38.
+(pdftex.def)             Requested size: 170.71652pt x 149.56596pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]\OT1/cmr/bx/n/17.28 The Three Types
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 50--50
+\OT1/cmr/bx/n/17.28 of Iso-lated Sin-gu-lar
+ []
+
+[26 <./Graphics/632.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[]\OT1/cmr/bx/n/17.28 Zeros of An-a-lytic
+ []
+
+[27]
+<Graphics/69.jpg, id=112, 234.8775pt x 171.64125pt>
+File: Graphics/69.jpg Graphic file (type jpg)
+<use Graphics/69.jpg>
+Package pdftex.def Info: Graphics/69.jpg  used on input line 93.
+(pdftex.def)             Requested size: 229.5pt x 167.71225pt.
+ [28 <./Graphics/69.jpg>]) (Chapters/chapter07.tex [29
+
+]
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/17.28 Evaluation of Im-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]\OT1/cmr/bx/n/17.28 Improper In-te-grals
+ []
+
+) [30
+
+] ("Concise Review.aux") ) 
+Here is how much of TeX's memory you used:
+ 2575 strings out of 493305
+ 34566 string characters out of 3138875
+ 101166 words of memory out of 3000000
+ 6054 multiletter control sequences out of 15000+200000
+ 13057 words of font info for 50 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,14n,25p,908b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Concise Review.pdf" (31 pages, 550825 bytes).
+PDF statistics:
+ 167 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

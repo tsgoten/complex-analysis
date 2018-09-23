@@ -1,0 +1,240 @@
+\chapter{Analytic Functions}
+This section will introduce analytic functions and the differentiation for complex valued functions. 
+\section{Functions of a Complex Variable}
+The convention is that a complex function, $ f(z) $ may have values of $ w = u + vi $ this form follows the input giving us 
+\[ f(x+iy) = w = u + iv \] where the two parts of the output are functions with respect to $ x $ and $ y $ such as \[ u(x,y) \text{ and } v(x,y) \] This gives us the notation 
+\[ f(z) = u(x,y) + iv(x,y) \] This shows that a complex function can be considered a two-dimensional mapping, which can be difficult to visualize. \\
+It may also be useful to consider the function in polar form. For this we consider Euler's formula and find 
+\[ f(re^{i \theta}) = u + iv \] 
+in the case that $ z = re^{i\theta} $ we can express the function as 
+\[ f (z) = u(r,\theta) + iv(r,\theta)\]
+\begin{example}
+	if $ f(z) = z^2 $, then 
+	\begin{align}
+		f(x+iy) = u + iv \\
+		z = x + iy 
+		\intertext{applying the function we find}
+		f(z) = (x + iy)^2 \\
+		f(z) = x^2 - y^2 + 2ixy 
+		\intertext{This gives us the values for $ u \text{ and } v$}
+		u(x,y) = x^2 - y^2 \\
+		v(x,y) = 2xy
+		\intertext{In polar coordinates this is given by}
+		z = re^{i\theta} \\
+		f(z) = z^2 = r^2 e^{i2\theta} 
+		\intertext{if we express this in terms of sine and cosine}
+		r^2 e^{i2\theta} = r^2 \cos 2 \theta + r^2i \sin 2 \theta \\
+		u(r, \theta) = r^2 \cos 2 \theta \\
+		v(r, \theta) = r^2 \sin 2 \theta
+	\end{align}
+\end{example}
+\section{Limits}
+The definition for limits of complex function is similar to that of a multivariable function. The limit must exist from all directions for the limit to exist. 
+\begin{example}
+	\begin{align}
+		f(z) = \dfrac{z}{\bar{z}}
+		\intertext{the limit}
+		\lim \limits_{z \rightarrow 0} f(z) 
+		\intertext{does not exist because the limit does not agree from all directions. We can consider two directions from the real axis and from imaginary axis. From the real axis the values for $ z = x + i0 $ so the limit becomes} 
+		\lim \limits_{x \rightarrow 0} \dfrac{x}{x} = 1 
+		\intertext{From the imaginary axis it is} 
+		\lim \limits_{y \rightarrow 0} \dfrac{y}{-y} = -1 
+	\end{align}
+\end{example}
+The limit for a complex number $ w $ of the form \[ w = u + iv \] exists if and only if the limits for $ u $ and $ v $ exist. \\
+If a function is continuous throughout a region $ R $ that is both closed and bounded, there exists a nonnegative real number $ M $ such that \[ |f(z)| \leq M \] for all points $ z $ in $ R $. We prove this by finding the maximum distance a point is from a point. \[ \sqrt{[u(x,y)]^2 + [v(x,y)]^2} \] Since $ f $ is continuous, the function above is continuous as well. Showing that there must be a maximum value $ M $
+\section{Continuity}
+A function $ f $ is continuous at a point $ z_0 $ if the following three statements are satisfied 
+\begin{enumerate}
+	\item $ \lim\limits_{z \rightarrow z_0} f(z) $ exists, 
+	\item $ f(z_0) $ exists, 
+	\item $ \lim\limits_{z \rightarrow z_0} f(z) = f(z_0) $
+\end{enumerate}
+Note that the last condition also says, that for each positive number $ \epsilon $, there is a positive number $ \delta $ such that \[ |f(z)-f(z_0)| < \epsilon \text{ whenever } |z-z_0|<\delta\]
+\begin{theorem}
+	A composition of continuous functions is itself continuous
+\end{theorem}
+\begin{theorem}
+	if a function $ f(z) $ is continuous and nonzero at a point $ z_0 $, then $ f(z) \neq 0 $ throughout some neighborhood of that point. 
+\end{theorem}
+Assuming that $ f(z) $ is, in fact, continuous and nonzero at $ z_0 $, we can prove Theorem 2 by assigning the positive value $ |f(z_0)/2 $ to the number $ \epsilon $ in statement considering the limit. This tells us that there is a positive number $ \delta $ such that 
+\[ |f(z)-f(z_0) < \dfrac{|f(z_0)|}{2} \text{ whenever } |z-z_0| < \delta\] 
+So if the point $ z $ is in the neighborhood $ |z-z_0| < \delta $ at which $ f(z) = 0 $, we have the contradiction \[ |f(z_0)| < \dfrac{|f(z_0)|}{2} \]
+\begin{theorem}
+	if a function $ f $ is continuous throughout a region $ R $ that is both closed and bounded, there exists a nonnegative real number $ M $ such that \[ |f(z)| \leq M \text{ for all points $ z $ in $ R $} \]
+	where equality holds for at least on such $ z $
+\end{theorem}
+
+\section{Derivatives}
+The derivative for complex functions can be similarly evaluated. \\ The derivative of $ f $ at $ z_0 $ is the limit \[ f'(z_0) = \lim \limits_{z \rightarrow z_0} \dfrac{f(z) - f(z_0)}{z - z_0} \] 
+and the function $ f $ is differentiable at $ z_0 $ when $ f'(0) $ exists. \\ By expressing $ \Delta z = z - z_0  $ where $ (z \neq z_0) $ we can write the derivative as 
+\[ f'(z_0) = \lim\limits_{\Delta z \rightarrow 0} \dfrac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}\] because $ f $ is defined throughout a neighborhood of $ z_0 $. \\ 
+We often drop the subscript on $ z_0 $ and introduce 
+\[ \Delta w = f(z + \Delta z)- f(z) \] which denotes a change in the value of $ w = f(z) $ of $ f $ corresponding to a change $ \Delta z $ in the point at which $ f $ is evaluated. Then, if we write $ dw/dz $ for $ f'(z) $, equation becomes 
+\[ \dfrac{dw}{dz} = \lim\limits_{\Delta z \rightarrow 0} \dfrac{\Delta w}{\Delta z}\]
+\begin{example}
+	Suppose that $ f(z) = z^2$. At any point $ z $, 
+	\[ \lim\limits_{\Delta z \rightarrow 0} \dfrac{(z+\Delta z)^2 - z^2}{\Delta z} = \lim\limits_{\Delta z \rightarrow 0} (2z + \Delta z) = 2z\]
+\end{example}
+\begin{example}
+	Consider the real-valued function $ f(z) = |z|^2 $. Here 
+	\begin{align}
+		\dfrac{\Delta w}{\Delta z} &= \dfrac{|z+ \Delta z|^2 - |z|^2}{\Delta z} \\
+		\intertext{using the fact $ |z|^2 = z\overline{z} $ and that the conjugate is distribuitve over addition.}
+		\dfrac{|z+ \Delta z|^2 - |z|^2}{\Delta z} &= \dfrac{(z + \Delta z)(\overline{z} + \overline{\Delta z}) - z\overline{z}}{\Delta z} \\
+		\dfrac{\Delta w}{\Delta z} &= \overline{z} + \overline{\Delta z} + z \dfrac{\overline{\Delta z}}{\Delta z}
+		\intertext{We can now consider the limit from two directions: the real axis and the imaginary axis. Considering each of these axis, would mean setting $ \Delta x $ and $ \Delta y $ to zero respectively. From the real axis $ \Delta y = 0$, so the limit of the last term}
+		\dfrac{\overline{\Delta z}}{\Delta z} &= 1 \\
+		\intertext{With respect to the imaginary axis, $ \Delta x = 0$, so the limit is}
+		\dfrac{\overline{\Delta z}}{\Delta z} &= -1
+		\intertext{Now finding the limit gives two expressions}
+		\lim\limits_{\Delta z \rightarrow 0} \dfrac{\Delta w}{\Delta z} &= \overline{z} + z \\
+		\lim\limits_{\Delta z \rightarrow 0} \dfrac{\Delta w}{\Delta z} &= \overline{z} - z	
+		\intertext{The only point when both limits are true is for the values $ z =0 $, thuse the derivative does exist there and the derivative is $ 0 $}
+	\end{align}
+\end{example}
+Example 3 shows that a function $ f(z) = u + iv $ can be differentiable at a point $ z $ but nowhere else in any neighborhood of that point. \\
+Since 
+\[ u(x,y) = x^2 + y^2 \text{ and } v(x,y)=0\]
+when $ f(z) = |z|^2 $, it also shows that the real imaginary components of a functions of a complex variable can have continuous partial derivatives of all order at a point $ z = (x,y) $ and yet the function may not be differentiable there. \\
+The function $ f(z) = |z|^2 $ is continuous at each point in the plane since its components are continuous at each point. So the continuity of a function at a point does not imply the existence of a derivative there. It is, however, true that \textit{the existence of the derivative of a function at a point implies the continuity of the function at that point}. \\
+Most formulas for differentiating extend to complex functions as well, such as: power rule, rules for constants, addition, multiplication, division and chain rule. 
+\begin{example}
+	The derivative of $ (2z^2 + i)^5 $, write $ w = 2z^2 + i $ and $ W = w^5 $. Then 
+	\[ \dfrac{d}{dz} (2z^2 + i)^5 = 20z(2z^2 + i)^4 \]
+\end{example}
+
+\section{Cauchy-Riemann Equations}
+In this section, we will discuss the conditions required to show that a complex valued function is differentiable. \\ These conditions are given as follows 
+\begin{theorem}
+	Suppose that \[ f(z) = u(x,y) + iv(x,y) \] and that $ f'(z) $ exists at a point $ z_0 = x_0 + iy_0 $. Then the first-order partial derivatives of $ u $ and $ v $ must exist at $ (x_0, y_0) $, and they must satisfy the Cauchy-Riemann equations 
+	\[ u_x = v_y, \indent u_y = -v_x \]
+	there. Also, $ f'(z_0) $ can be written 
+	\[ f'(z_0) = u_x + i v_x \] 
+	where these partial derivatives can be evaluated at $ (x_0, y_0) $.
+\end{theorem} 
+
+We will now arrive at the Cauchy-Riemann conditions, consider \[ f(z) = u(x,y) + iv(x,y) \] which must satisfy at a point $ z_0 = (x_0, y_0) $ when the derivative of $ f $ exists here. Assuming the derivative does in fact exist 
+\begin{align}
+f'(z_0) = \lim \limits_{\Delta z \rightarrow 0} \dfrac{\Delta w}{\Delta z} \\
+\intertext{we know the limit can be expressed as }
+f'(z_0) = \lim \limits_{(\Delta x, \Delta y) \rightarrow (0,0)} \left(\text{Re}\dfrac{\Delta w}{\Delta z}\right) + \notag \\ i \lim \limits_{(\Delta x, \Delta y) \rightarrow (0,0)} \left(\text{Im}\dfrac{\Delta w}{\Delta z}\right)
+\intertext{It is important to note that the expression can approach $ (0,0) $ in any manner. In particular, it is useful to consider the limit from the vertical $ (0, \Delta y) $ and the horizontal $(\Delta x, 0)$ }
+\intertext{Specifically  from horizontal, when $ \Delta y = 0 $ gives}
+\dfrac{\Delta w}{\Delta z} = \dfrac{u(x_0 + \Delta x, y_0)-u(x_0, y_0)}{\Delta x} + \notag \\\dfrac{v(x_0 + \Delta x, y_0)-v(x_0, y_0)}{\Delta x}
+\intertext{Thus}
+\lim \limits_{(\Delta x, \Delta y) \rightarrow (0,0)} \left(\text{Re}\dfrac{\Delta w}{\Delta z}\right) = u_x(x_0, y_0)
+\intertext{and}
+\lim \limits_{(\Delta x, \Delta y) \rightarrow (0,0)} \left(\text{Im}\dfrac{\Delta w}{\Delta z}\right) = v_x(x_0, y_0)
+\intertext{where $ u(x_0,y_0) \text{ and } v(x_0,y_0)$ are the first order partial derivatives with respect to $ x $ of the functions $ u  $ and $ v $. substitution of these limits give us}
+f'(z_0) = u_x(x_0, y_0) + iv_x(x_0, y_0)
+\end{align}
+We might have let $ \Delta z $ tend to zero vertically in which case $ \Delta x = 0$ 
+\begin{align}
+\dfrac{\Delta w}{\Delta z} = \dfrac{u(x_0, y_0+ \Delta y)-u(x_0, y_0)}{i\Delta y} + \notag \\\dfrac{v(x_0 , y_0+ \Delta y)-v(x_0, y_0)}{i\Delta y} \notag \\
+\dfrac{\Delta w}{\Delta z}=  \dfrac{v(x_0 , y_0+ \Delta y)-v(x_0, y_0)}{\Delta y} - \notag \\
+\dfrac{u(x_0, y_0+ \Delta y)-u(x_0, y_0)}{\Delta y}
+\intertext{which gives}
+f'(z_0) = v_y(x_0,y_0) - iu_x(x_0,y_0)
+\end{align}
+Comparing the two different expressions for the derivative of the same function, we can find the conditions. Remember that for two complex numbers to equal the real and imaginary parts must be equal respectively. Thus, we can set the two respective parts equal to each other and find the conditions. 
+\begin{example}
+	In Example 3.4.1 we showed that the derivative of the function $ f(z) =z^2 $ is equal to $ 2z $. Here we show that the derivative exists everywhere using the Cauchy-Riemann equations
+	\begin{gather}
+		u(x,y) = x^2 - y^2 \\
+		v(x,y) = 2xy 
+		\intertext{Thus}
+		u_x = 2x = v_y, \\
+		u_y = -2y=-v_x 
+		\intertext{Moreover, according to the Theorem 3.5.1}
+		f'(z) = u_x + iu_y \notag \\
+		f'(z) = 2x + i2y = 2(x+iy) = 2z		
+	\end{gather}
+\end{example}
+Cauchy-Riemann equations can also be used to determine where the derivate of a function does not exist. 
+\begin{example}
+	If we consider the equation from Example 3.4.2, $ f(z) = |z|^2 $ we can arrive at our previous result, that $ f $ is only differentiable when $ z = 0 $ 
+	\begin{gather}
+		|z|^2 = z\overline{z} = (x+iy)(x-iy) = \notag \\
+		x^2 + y^2 \\
+		u_x = 2x \indent  v_y = 0 \\
+		u_y = 2y \indent  -v_x = 0 
+		\intertext{The following conditions are only true if $ z =0$ which follows the solution we found earlier}
+		f'(z) = 0
+	\end{gather}
+\end{example}
+\section{Polar Coordinates}
+Assuming that $ z_0 \neq 0 $, we shall show the Cauchy-Riemann conditions in polar coordinates, where \[ x = r\cos \theta, \indent y=r\sin \theta \] %Use the macros \polarx and \polary instead 
+Depending on whether we write \[ z = x + iy  \text{\indent  or \indent } z = \polarz \] 
+The Cauchy-Riemann condition for polar coordinates are given such: 
+\begin{theorem}
+	Let the function \[ f(z) = u(r, \theta) + iv(r, \theta) \] be defined through some  $ \epsilon $ neighborhood of a nonzero point $ z_0 = r_0 e^{i \theta _0} $ and suppose that 
+	\begin{enumerate}
+		\item the first-order partial derivatives of the functions $ u $ and $ v $ with respect to $ r $ and $ \theta $ exist everywhere in the neighborhood; 
+		\item those partial derivatives are continuous at $ (r_0, \theta _0) $ and satisfy the polar form \[ ru_r = v_\theta, $$ $$ u_\theta = -rv_r \] of the Cauchy-Riemann equations at $ (r_0, \theta_0) $
+ 	\end{enumerate}
+ 	Then $ f'(z_0) $ exists, its value being \[ f'(z_0) = e^{-i\theta} (u_r + iv_r),\] where the right hand side is the be evaluated at $ (r_0, \theta_0) $
+\end{theorem}
+\begin{align}
+	\intertext{We can prove the theorem, by using the chain rule and definition of $ x $ and $ y $ in polar coordinates. Rememver that $ r $ is a function of $ x $ and $ y $, and so is  $\theta$.}
+	\dfrac{\partial u}{\partial r} &= \dfrac{\partial u}{\partial x}\dfrac{\partial x}{\partial r} +
+	\dfrac{\partial u}{\partial y}\dfrac{\partial y}{\partial r} \\
+	\dfrac{\partial u}{\partial \theta}& = \dfrac{\partial u}{\partial x}\dfrac{\partial x}{\partial \theta} +
+	\dfrac{\partial u}{\partial y}\dfrac{\partial y}{\partial \theta} 
+	\intertext{Which gives}
+	u_r &= u_x \cos \theta + u_y \sin \theta, \\
+	u_\theta &= -u_x r\sin \theta + u_y r\cos \theta
+	\intertext{likewise}
+	v_r &= v_x \cos \theta + v_y \sin \theta, \\
+	v_\theta &= -v_x r\sin \theta + v_y r\cos \theta
+	\intertext{Since, $ u_x = v_y$ and $ u_y = -v_x $ we can make this substitution}
+	v_\theta &= u_y r\sin \theta  + u_x r\cos \theta 
+	\intertext{Which is equal to}
+	v_\theta &= ru_r 
+	\intertext{likewise}
+	v_r &= -u_y \cos \theta + u_x \sin \theta \\
+	-rv_r &= u_\theta  
+\end{align}
+\begin{example}
+	Consider the function \[ f(z) = \dfrac{1}{z} = \dfrac{1}{\polarz} = \dfrac{1}{r}e^{-i\theta} = \dfrac{\cos \theta}{r} - i\dfrac{\sin \theta }{r} \] For when $ z \neq 0 $. The conditions for the Cauchy-Riemann equations are satisfied everywhere in the domain of the function. 
+	\begin{gather}
+	ru_r = -r\dfrac{\cos \theta}{r^2} = v_\theta = -\dfrac{\cos \theta}{r} \\
+	-rv_r = -r \dfrac{\sin \theta }{r^2} = u_\theta = -\dfrac{\sin \theta}{r}
+	\end{gather}
+	The conditions hold, and the function is differentiable everywhere in its domain. 
+\end{example}
+\section{Analytic Functions}
+A function $ f $ is said to be analytic if the complex variable $ z $ is analytic at a point $ z_0 $ if it has derivative at each point in the neighborhood of $ z_0 $ 
+\begin{theorem}
+	If $ f'(z)  =0$ everywhere in a domain $ D $, then $ f(z) $ must be constant throughout $ D $. 
+\end{theorem}
+\begin{example}
+	if \[ f(z) = \cosh x \cos y + i \sinh x \sin y \]
+	The component functions $ u $ and $ v $ follow the Cauchy-Riemann conditions. Therefor the function is analytic. 
+\end{example}
+\section{Harmonic Functions}
+A function is said to be harmonic if it has partial derivatives of the first and second order that satisfy the PDE 
+\[ H_{xx}(x,y) + H_{yy}(x,y) = 0 \] known as Laplace's Equation. Harmonic functions play an important role in applied mathematics. 
+\section{Reflection Principle}
+Some analytic functions have the property that \[ \overline{f(z)} = f(\overline{z}) \] for all points $ z $ in certain domains. 
+\begin{theorem}
+	Suppose that a function $ f $ is analytic in some domain $ D $ which contains a segment of the $ x $ axis and whose lower half is the reflection of the upper half with respect to that axis. Then \[ \overline{f(z)} = f(\overline{z}) \] for each point $ z $ in the domain if and only if $ f(x) $ is real for each point $ x $ on the segment. 2
+\end{theorem}
+Prove the theorem above as an exercise. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

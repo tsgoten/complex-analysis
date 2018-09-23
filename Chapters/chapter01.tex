@@ -1,0 +1,39 @@
+\chapter{Introduction}
+\section{Introduction}
+		\indent The Historical context for complex numbers is actually quite interesting, considering that complex arise with trivial calculations. Complex numbers were first discovered in around the 1500s, but for the first two and a half centuries much was not accomplished. To make one feel better in 1770 even Euler argued that $ \sqrt{-2} \sqrt{-3} = \sqrt{6}$. Consider with your current knowledge why this is not the case. \\
+		\indent Later people recognized it was convenient to represent complex numbers as vectors in the complex plane. The plane is denoted $ \mathbb{C} $. The form for complex plane followed that of the $ x-y $ axis where the form of a complex number is $ a + bi $ \\ 
+		\indent The operations of adding and multiplying (by extension subtraction and division) can be now given geometric meaning. \\
+		\indent The sum of two complex numbers $ A + B$ is given by the parallelogram rule of ordinary vector addition. \\ 
+		\putpic{addvector}
+		\indent The length of $ AB $ is the product of the lengths of $ A $ and $ B $, and the angle of $ AB $ is the sum of the angles of $ A $ and $ B $. 
+		\putpic{multiply}
+		\indent It would take until people figured out how to do calculus with complex numbers would the field of complex analysis emerge. \pagebreak
+		\indent In summary people were not that concerned about complex numbers initially because when solving there quadratic functions 
+		\[ x^2 = mx + c \] and the quadratic formula 
+		\[ x = \dfrac{1}{2} [m \pm \sqrt{m^2 + 4c}] \] the simply discounted when $ m^2 + 4c $ was negative. And using there geometric intuitions of the intersection of a parabola and a line, it also showed that there was no solution. \\ 
+		\indent Now we enter Bombelli who considers the the cubic function and the solution to the cubic functions. In the case of a cubic function. We know that a cubic curve and a line must intersect, but when their formula resulted in complex numbers Bombelli figured the solution must exist. Hence, arrived the theory for adding complex numbers. 
+
+		\indent It is important to understand that a complex number is a single, indivisible entity - a point in the plane. \\ \indent
+		The rule for addition of complex numbers is simple to understand. The multiplication rule is just as simple when considered in polar coordinates. In place of $ z = x + iy $ we may write $ z = r \angle \theta $. The geometric multiplication now shows \[ (R \angle \phi) (r \angle \theta) = (Rr)\angle(\phi + \theta)  \] Though the polar and Cartesian labels may seem similar consider that $ \theta $ is periodical thus the representation of $ z $ is not unique in the polar form. 
+		Consider the following table and diagram to further understand the notation and terms. 
+		\putpiclinewidth{terms}
+\section{Euler's Formula}
+		We replace the $ r \angle \theta $ notation with a really dope one 
+		\[ e^{i\theta} = \cos \theta + i \sin \theta \] The derivation for this formula can easily be found, and one should already be familiar with. The Taylor Series expansion is a useful insight for this. \\Now we can represent $ z = re^{i \theta} $. This leads to the geometric rule for multiplying complex numbers: \[ (R e^{i \phi}) (r e^{i \theta}) = Rr e^{i(\phi + \theta)} \] Which makes the geometric property so obvious. \\
+		Another useful property from Euler's formula is derivation of sine and cosine function with respect to the exponential. 
+		\[ e^{i \theta}  + e^{-i \theta} = 2 \cos \theta \indent and \indent e^{i \theta}  - e^{-i \theta} = 2i \sin \theta\]
+		which gives us
+		\[ \dfrac{e^{i \theta}  + e^{-i \theta}}{2} = \cos \theta \indent and \indent \dfrac{e^{i \theta}  - e^{-i \theta}}{2i} = \sin \theta \]
+		\putpiclinewidth{sinecosineaddition}
+\section{Exercises}
+\begin{enumerate}
+	\item Express sine and cosine as an expression with the exponential
+	\item Use the above expression to derive angle addition properties
+	\item What is $ \sqrt{-2}\sqrt{-3} $
+	\item Express the angle addition property in polar form
+	\item Express the multiplicative properties in polar form
+	\item What is $ z + w $ where \[ z = 5 + 4i \] and \[ w = -4 + 7i \]
+\end{enumerate}
+\cleardoublepage
+
+

@@ -1,0 +1,120 @@
+\chapter{Residues and Poles}
+The Cauchy-Goursat theorem states that if a function is analytic at all
+points interior to and on a simple closed contour $ C $, then the value of the integral
+of the function around that contour is zero. If, however, the function fails to be
+analytic at a finite number of points interior to $ C $, there is, as we shall see in this
+chapter, a specific number, called a residue, which each of those points contributes
+to the value of the integral. We develop here the theory of residues
+\section{Isolated Singular Points}
+A point $ z_0 $ is called a singular point of a function $ f $ if $ f $ fails to be analytic at $ z_0 $ byt it analytica t some point in every neiborhood of $ z_0 $. A singular point $ z_0 $ is said to be isolated. 
+\begin{example}
+	the function 
+	\[ \dfrac{z+1}{z^3(z^2 + 1)} \] has the thee isolated singular points $ z = 0 $ and $ z = \pm i . $
+\end{example}
+\begin{example}
+	The origin is a singular point of the principal branch 
+	\[ Log z = \ln r + i \theta \indent (r > 0, -\pi < \theta < \pi) \] 
+	of the logarithmic function. It is not, however, an isolated singular point since every
+	deleted $ \epsilon $ neighborhood of it contains points on the negative real axis and the branch is not even defined there. Similar remarks can be made regarding any branch
+\end{example}
+\section{Residues}
+When $ z_0 $ is an isolated singular point of the function, there is a positive number $ R_2 $ such that $ f $ is analytic at each point $ z $ for which $ 0 < |z-z_0| < R_2 $. Consequently, $ f(z) $ has a Laurent series representation 
+\[ f(z) = \sum\limits^{\infty}_{n=0} a_n (z-z_0)^n + \dfrac{b_1}{z - z_0} + ... + \dfrac{b_n}{(z-z_0)^n}\] where the coefficients have integral representations. In particular 
+\[ b_n = \dfrac{1}{2 \pi i} \int_C \dfrac{f(z dz)}{(z-z_0)^{-n + 1}}\] where $ C $ is any positively oriented simple closed contour around $ z_0 $ that lies in the punctured disk. \\ We find the equation \[ \int_C f(z) dz = 2 \pi i Res_{z=z_0} f(z). \] Sometimes we simply use $ B $ to denote the residue when the function $ f $ and the point $ z_0 $ are clearly indicated.
+\begin{example}
+	Consider the integral 
+	\[ \int_C z^2 \sin \left(\dfrac{1}{z}\right) dz \] where $ C $ is the positively oriented unit circle. Since the integrand is analytic everywhere in the plane except at the origin, it has a laruent series representation $ 0 < |z| < \infty $. Thus, according to equation, the value of integral is $ 2 \pi i $ times the residue of its integrand at $ z = 0 $. \\ To determine that residue, we recall the Maclaurn series representation 
+	\[ \sin z = z - \dfrac{z^3}{3!} + \dfrac{z^5}{5!}+... \] and use it to write for $ \dfrac{1}{z} $ and find the desired residue \[ = 2 \pi i \left(-\dfrac{1}{3!}\right) = -\dfrac{ \pi i}{3} \]
+\end{example}
+\section{Cauchy's Residue Theorem}
+If, except for a finite number of singular points, a function $ f $ is analytic inside a simple closed contour $ C $, those singular points must be isolated. The following theorem, which is known as Cauchy's residue theorem, is a precise statement of the fact that if $ f $ is also analytic on $ C $ and if $ C $ is positively oriented, then the value of the integral of $ f $ around $ C $ is $ 2\pi i $ times the sum of the residues of $ f $ at the singular points inside $ C $.
+\begin{theorem}
+	Let $ C $ be a simple closed contour, described in the positive sense. If a function $ f $ is analytic inside and on $ C $ except for a finite number of singular points $ z_k (k = 1,2,...,n) $ inside $ C $, then 
+	\[ \int_C  f(z) dz = 2 \pi i \sum \limits_{k=1}^{n} \text{Res}_{z = z_k} f(z). \] 
+	\putpiclinewidth{631}
+\end{theorem}
+\section{Residue at Infinity}
+Suppose that a function $ f $ is analytic throughout the finite plane except for a finite number of singular points interior to a positively oriented simple closed contour $ C $. Next, let $ R_1 $ denote a positive number which is large enough that $ C $ lies inside that circle $ |z| = R_1 $. The function $ f $ is evidently analytic throughout the domain $ R_1 < |z| < \infty $ and, the point at infinity is then said to be an isolated singular point of $ f $.  	
+\putpic{632}  Now let $ C_0 $ denote a circle $ |z| = R_0 $, oriented clockwise. The residue at infinity is defined by means of the equation \[ \int_{C_0} f(z) dz = 2 \pi i Res_{z=\infty} f(z) \]
+\begin{theorem}
+If a function f is analytic everywhere in the finite plane except for a finite number of singular points interior to a positively oriented simple closed contour $ C $, then
+\[ \int_C f(z) dz = 2 \pi \underset{z =0}{Res} \left[ \dfrac{1}{z^2} f \left(\dfrac{1}{z}\right)  \right] \]
+\end{theorem}
+\begin{example}
+	The integral \[ f(z) = \dfrac{5z - 2}{z(z-1)} \] around the circle $ |z| = 2 $, described counterclockwise, by finding the residues of $ f(z) $ at $ z = 0  $ and $ z = 1 $. Since 
+	\[ \dfrac{1}{z^2} f\left( \dfrac{1}{z} \right)  = \dfrac{5 -2z}{z(1-z)} = \dfrac{5 -2z}{z} \cdot \dfrac{1}{1-z}   \] 
+	\[ = \left( \dfrac{5}{z} - 2 \right) (1 + z + z^2 + ...) \] 
+	\[ = \dfrac{5}{2} + 3 + 3z + ... \indent (0 < |z| < 1)\] we see that the theorem here can be used where the desired residue is 5. 
+	\[ = 2 \pi (5) = 10 \pi i \] where $ C $ is the circle in question.
+\end{example}
+\section{The Three Types of Isolated Singular Points}
+We saw that the theory is based on the fact that if $ f $ has an isolated singular point at $ z_0 $, then $ f(z) $ has a Laurent series representation involving negative powers of $ z - z_0 $, is called the principal part of $ f $ at $ z_0 $. We now use the principal part to identify the isolated singular point $ z_0 $ as one of three special types. This classification will aid us in the development of residue theory. \\ \indent If the principal part of $ f $ at $ z_0 $ contains at least one nonzero term but the number of such terms is only finite, then there exists a positive integer $ m ( m \geq 1) $ such that \[ b_m \neq 0 \] and \[ b_{m+1} = b_{m+2}=...=0 \] That is, expansion takes the form 
+\[ f(z = \sum\limits_{n=0}^{\infty} a_n (z-z_0)^n + \dfrac{b_1}{z -z_0} + ... + \dfrac{b_m}{z -z_0}^m \] where $ b_m \neq 0 $. In this case, the isolated singular point $ z_0 $ is called a pole of order m. A pole of order $ m =1 $ is usually reffered to as a simple pole. \\ There remain two extremes, the case in which every coefficient in the principal part is zero and the one in which an infinie number of them are nonzero. $ z_0 $ is known as a removable singular point. Note that the residue at a removable singular point is always zero. If we define, or possibly redefine, $ f $ at $ z_0 $ so that $ f(z_0 ) = a_0 $ , expansion becomes valid throughout the entire disk $ |z-z_0| < R_2 $. \\ If an infinite number of the coefficients $ b_n $ in the principal part are nonzero, $ z_0 $ is said to be an essential singular point of $ f $. 
+\section{Residue at Poles}
+When a function $ f $ has an isolated singularity at a point $ z_0 $ , the basic method for
+identifying $ z_0 $ as a pole and finding the residue there is to write the appropriate
+Laurent series and to note the coefficient of $ \dfrac{1}{z-z_0} $. The following theorem
+provides an alternative characterization of poles and a way of finding residues at
+poles that is often more convenient.
+\begin{theorem}
+	An isolated singular point $ z_0 $ of a function $ f $ is a pole of order $ m $ if and only if $ f(z) $ can be written in the form 
+	\[ f(z) = \dfrac{\phi (z)}{(z-z_0)^m} \]
+	where $ \phi(z) $ is analytic and nonzero at $ z_0 $. Moreover, 
+	\[ \underset{z = z_0}{Res} f(z) = \phi (z_0) \indent \text{if  } m = 1 \] and 
+	\[ \underset{z = z_0}{Res} f(z) = \dfrac{\phi^{m -1} (z_0)}{(m-1)!} \text{ if } m \geq 2. \]
+\end{theorem}
+\section{Zeros of Analytic Functions}
+Zeros and poles are closely related. Zeros can be a source of poles. 
+\begin{theorem}
+	Let a function $ f $ be analytic at a point $ z_0 $. It has a zero of order $ m $ at $ z_0 $ if and only if there is a function $ g $, which is analytic and nonzero at $ z_0 $, such that \[ f(z) = (z-z_0)^m g(z) \] \indent 
+\end{theorem}
+	Both parts of the proof follows the fact the the function is analytic at $ z_0 $ 
+\begin{example}
+	The polynomial $ f(z) = z^3 - 8 $ has a zero of order $ m = 1 $ at $ z_0 = 2 $ since \[ f(z) = (z-2)g(z), \] where $ g(z) = z^2 + 2z + 4 $, and because $ f $ and $ g $ are entire and $ g(2) = 12 \neq 0 $. Note how the fact that $ z_0 = 2 $ is a zero fo order $ m = 1 $ of $ f $ also follows from the observations that $ f $ is entire and that \[ f(2) = 0\]and \[ f'(2) = 12 \neq 0 \] 
+\end{example}
+		\indent Our next theorem tells us that the zeros of an analytic function are isolated when the function is not identically equal to zero. 
+\begin{theorem}
+	Given a function $ f $ and a point $ z_0 $, suppose that 
+	\begin{enumerate}
+		\item $ f $ is analytic at $ z_0 $; 
+		\item $ f(z_0) = 0$ but $ f(z) $ is not identically equal to zero in any neighborhood of $ z_0 $. Then $ f(z) \neq 0 $ throughout some deleted neighborhood $ 0 < |z-z_0|< \epsilon $ of $ z_0 $.  
+	\end{enumerate}
+\end{theorem}
+Our final theorem here concerns functions with zeros that are not all isolated.
+It was referred to earlier and makes an interesting contrast to Theorem 2
+just above.
+\begin{theorem}
+	Given a function $ f $ and a point $ z_0 $, suppose that 
+	\begin{enumerate}
+		\item $ f $ is analytic throughout a neighborhood $ N_0 $ of $ z_0 $; 
+		\item $ f(z) = 0 $ at each point $ z $ of a domain $ D $ or line segment $ L $ containing $ z_0 $ 
+	\end{enumerate}
+	Then $ f(z) = 0 $ in $ N_0 $; that is, $ f(z) $ is identically equal to zero throughout $ N_0 $. 
+	\putpiclinewidth{69}
+\end{theorem}
+\section{Zeros and Poles}
+The following theorem shows how zeros of order $ m $ can create poles of order $ m $. 
+\begin{theorem}
+	Suppose that 
+	\begin{enumerate}
+		\item two functons $ p $ and $ q $ are analytic at a point $ z_0 $; 
+		\item $ p(z_0) \neq 0 $ and $ q $ has a zero of order $ m $ at $ z_0 $. 
+	\end{enumerate}
+	Then the quotient $ p(z)/q(z) $ has a pole of order $ m $ at $ z_0 $
+\end{theorem}
+Theorem 1 leads us to another method for identifying simple poles and finding the corresponding residues. This method, stated just below as Theorem 2, is sometimes easier to use
+\begin{theorem}
+	Let two functions $ p $ and $ q $ be analytic at a point $ z_0 $. If $ p(z_0) \neq 0 $, $ q(z_0) =0 $ and $ q'(z_0) \neq 0 $ then $ z_0 $ is a simple pole of the quotient $ p(z)/q(z) $ and \[ \underset{z=z_0}{Res} \dfrac{p(z)}{q(z)} = \dfrac{p(z_0)}{q'(z_0)}\]
+\end{theorem}
+\begin{example}
+	Consider the function \[ f(z) = \cot z = \dfrac{\cos z}{\sin z} \] which is a quotient of the entire functions. Its singularities occur at the zeros of $ q(z) = \sin z $, or at the points \[ z = n \pi \] Since \[ p(n \pi) = (-1)^n \neq 0 \]\[ q(n \pi ) = 0 \] \[ q'(n \pi) = -1^n \neq 0 \] each singular point is a simple pole, with residue \[ B_n = 1. \]
+\end{example}
+
+
+
+
+
+
+
+
+
